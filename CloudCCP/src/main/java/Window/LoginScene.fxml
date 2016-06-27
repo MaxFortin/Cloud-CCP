@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="Window.loginController">
+  <children>
+    <Pane layoutX="0.0" layoutY="0.0" prefHeight="600.0" prefWidth="800.0">
+      <children>
+        <PasswordField fx:id="passwordField" layoutX="256.0" layoutY="300.0" prefHeight="30.9609375" prefWidth="277.0" />
+        <TextField fx:id="usernameField" layoutX="256.0" layoutY="245.0" prefHeight="30.9609375" prefWidth="277.0" text="Username" />
+        <Button fx:id="submit" layoutX="256.0" layoutY="360.0" mnemonicParsing="false" onAction="#handle" prefWidth="277.0" text="Login" />
+        <Label layoutX="256.0" layoutY="42.0" prefHeight="64.921875" prefWidth="277.0" text="  Cloud Copy and Paste" textAlignment="CENTER">
+          <font>
+            <Font size="24.0" />
+          </font>
+        </Label>
+      </children>
+    </Pane>
+  </children>
+</AnchorPane>
