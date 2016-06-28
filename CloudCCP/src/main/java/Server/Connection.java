@@ -6,14 +6,13 @@ public class Connection {
 	final String IP = "raspberrypi.home";
 	Jedis client;
 	
-	public Connection(){
-		connect();
-	}
 	public void connect(){
 		client = new Jedis(IP);
+		System.out.println("Connected!!!");
 	}
 	public void close(){
 		client.quit();
+		System.out.println("Connection closed!!!");
 	}
 	//flesh out later
 	public String testConection(String testVal){
