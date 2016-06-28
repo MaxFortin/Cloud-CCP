@@ -1,6 +1,6 @@
 package Controllers;
 
-import Server.Connection;
+import Server.LoginConnection;
 import Window.MainStage;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -22,9 +22,8 @@ public class loginController {
 			
             @Override
             public void handle(ActionEvent event) {
-            	Connection newConnection = new Connection();
-            	String response = newConnection.testConection("Max");
-            	System.out.println(response);
+            	LoginConnection login = new LoginConnection("Max","maxiscool"); 
+            	System.out.println(login.login());
             }
         });
 		
