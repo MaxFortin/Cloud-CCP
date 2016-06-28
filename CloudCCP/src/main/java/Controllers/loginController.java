@@ -1,5 +1,7 @@
-package Window;
+package Controllers;
 
+import Server.Connection;
+import Window.MainStage;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -20,8 +22,9 @@ public class loginController {
 			
             @Override
             public void handle(ActionEvent event) {
-            	flip();
-            	System.out.println("Stage changed sucessfully!!");
+            	Connection newConnection = new Connection();
+            	String response = newConnection.testConection("Max");
+            	System.out.println(response);
             }
         });
 		
