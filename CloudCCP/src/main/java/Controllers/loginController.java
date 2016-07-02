@@ -22,8 +22,8 @@ public class loginController {
 			
             @Override
             public void handle(ActionEvent event) {
-            	LoginConnection login = new LoginConnection("Max","maxiscool"); 
-            	System.out.println(login.login());
+            	LoginConnection login = new LoginConnection(); 
+            	System.out.println(login.login(usernameField.getText(), passwordField.getText()));
             }
         });
 		

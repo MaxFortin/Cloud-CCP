@@ -5,12 +5,11 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
-
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="Controllers.mainController">
   <children>
-    <Pane layoutX="0.0" layoutY="0.0" prefHeight="200.0" prefWidth="200.0">
+    <Pane layoutX="0.0" layoutY="0.0" prefHeight="600.0" prefWidth="800.0">
       <children>
-        <Button layoutX="72.0" layoutY="80.0" mnemonicParsing="false" text="Return" />
+        <Button fx:id="testButton" layoutX="372.0" layoutY="290.0" mnemonicParsing="false" onAction="#handle" text="Return" />
       </children>
     </Pane>
   </children>

@@ -1,6 +1,6 @@
 package Window;
 
-import fortin.max.CloudCCP.CloudCCP.ServerHandler;
+
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.Event;
